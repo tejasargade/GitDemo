@@ -6,52 +6,66 @@
 }
 
 body{
-    background:#f5f5f5;
+    width:100vw;
+    height:100vh;
+    background:#f8f8f8;
 }
 
 /* NAVBAR */
 
 nav{
-    padding:25px 70px;
+    width:100%;
+    height:10vh;
+    padding:2vh 5vw;
 }
 
 .logo{
     display:inline-block;
-    font-size:32px;
-    font-weight:700;
+    font-size:2.5vw;
+    font-weight:bold;
     color:#4a5568;
 }
 
 .nav-links{
     display:inline-block;
-    margin-left:250px;
+    margin-left:18vw;
 }
 
 .nav-links li{
     display:inline-block;
-    margin:0 18px;
+    margin:0 1vw;
 }
 
-.nav-links li a{
+.nav-links a{
     text-decoration:none;
-    color:#808080;
-    font-size:16px;
+    color:#666;
+    font-size:1.1vw;
+}
+
+.nav-links a:hover{
+    color:#1da1f2;
 }
 
 .user-btn{
     float:right;
-    background:#e6f4ff;
-    color:#2a9df4;
     border:none;
-    padding:12px 20px;
-    border-radius:10px;
+    background:#e6f4ff;
+    color:#1da1f2;
+    padding:1vh 1.5vw;
+    border-radius:0.5vw;
     cursor:pointer;
+}
+
+.user-btn:hover{
+    background:#cfeaff;
 }
 
 /* HERO SECTION */
 
 .hero{
-    padding:50px 90px;
+    width:100%;
+    height:90vh;
+    padding:5vh 6vw;
 }
 
 .left-section{
@@ -68,34 +82,39 @@ nav{
 }
 
 .left-section h1{
-    font-size:72px;
-    line-height:1.15;
+    font-size:4vw;
+    line-height:1.2;
     color:#4a5568;
-    margin-bottom:25px;
 }
 
-.left-section h1 span{
+.left-section span{
     color:#1da1f2;
 }
 
 .left-section p{
+    margin-top:3vh;
     width:80%;
-    font-size:18px;
-    line-height:1.7;
     color:#9ca3af;
-    margin-bottom:30px;
+    font-size:1.4vw;
+    line-height:1.7;
 }
 
 .service-btn{
+    margin-top:4vh;
     border:none;
     background:#1da1f2;
     color:white;
-    padding:15px 35px;
-    border-radius:12px;
-    font-size:16px;
+    padding:1.5vh 2vw;
+    border-radius:0.8vw;
+    font-size:1vw;
     cursor:pointer;
 }
 
+.service-btn:hover{
+    background:#0d8be6;
+}
+
 .right-section img{
-    width:420px;
+    width:30vw;
+    max-width:100%;
 }
