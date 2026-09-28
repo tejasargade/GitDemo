@@ -1,11 +1,25 @@
 import "./style.css";
+import ProductCard from "./components/ProductCard/ProductCard";
+import { products } from "./data/products";
 
 function App() {
-  return (
+    return (
     <div className="App">
-      <h1>Product showcase</h1>
-      <p>Welcome to our store</p>
+      <header>
+        <h1>Product Showcase</h1>
+        <p>Discover our amazing products</p>
+      </header>
+      <main className="products-grid">
+        {products.map(product => (
+          <ProductCard
+          key={product.id}
+          {...product}
+          />
+        ))}
+      </main>
     </div>
+
+
   );
 }
 
